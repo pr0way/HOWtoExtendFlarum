@@ -1,0 +1,30 @@
+{
+    "name": "anon/hello-world",
+    "description": "My first extension to flarum",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "anon",
+            "email": "example@example.com"
+        }
+    ],
+    "require": {
+        "flarum/core": "^0.1.0-beta.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "anon\\HelloWorld\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Hello World",
+            "icon": {
+                "name": "cube",
+                "backgroundColor": "#333",
+                "color": "#fff"
+            }
+        }
+    }
+}
